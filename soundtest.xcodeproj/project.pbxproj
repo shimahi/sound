@@ -1,0 +1,82 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		035899181F1D95030053B9F4 /* soundtest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = soundtest.c; sourceTree = "<group>"; };
+		035899191F1D99950053B9F4 /* testnote.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testnote.c; sourceTree = "<group>"; };
+		0358991A1F1D9CD50053B9F4 /* muon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = muon.c; sourceTree = "<group>"; };
+		0358991B1F1DA0220053B9F4 /* nokogiri.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nokogiri.c; sourceTree = "<group>"; };
+		0358991E1F1DA5570053B9F4 /* voice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = voice.c; sourceTree = "<group>"; };
+		0358991F1F1DA79B0053B9F4 /* kukei.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kukei.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		035899111F1D94C10053B9F4 = {
+			isa = PBXGroup;
+			children = (
+				0358991F1F1DA79B0053B9F4 /* kukei.c */,
+				0358991E1F1DA5570053B9F4 /* voice.c */,
+				0358991B1F1DA0220053B9F4 /* nokogiri.c */,
+				0358991A1F1D9CD50053B9F4 /* muon.c */,
+				035899191F1D99950053B9F4 /* testnote.c */,
+				035899181F1D95030053B9F4 /* soundtest.c */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		035899121F1D94C10053B9F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 035899151F1D94C10053B9F4 /* Build configuration list for PBXProject "soundtest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 035899111F1D94C10053B9F4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		035899161F1D94C10053B9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		035899171F1D94C10053B9F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035899151F1D94C10053B9F4 /* Build configuration list for PBXProject "soundtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035899161F1D94C10053B9F4 /* Debug */,
+				035899171F1D94C10053B9F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 035899121F1D94C10053B9F4 /* Project object */;
+}
