@@ -17,12 +17,14 @@
 		035899211F20784A0053B9F4 /* triangle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = triangle.c; sourceTree = "<group>"; };
 		035899221F20795A0053B9F4 /* renzokutest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = renzokutest.c; sourceTree = "<group>"; };
 		035899231F2087C50053B9F4 /* kuuhaku.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kuuhaku.c; sourceTree = "<group>"; };
+		035899241F2089580053B9F4 /* frog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = frog.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		035899111F1D94C10053B9F4 = {
 			isa = PBXGroup;
 			children = (
+				035899241F2089580053B9F4 /* frog.c */,
 				035899231F2087C50053B9F4 /* kuuhaku.c */,
 				035899221F20795A0053B9F4 /* renzokutest.c */,
 				035899211F20784A0053B9F4 /* triangle.c */,
