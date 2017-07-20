@@ -13,15 +13,21 @@
 		0358991B1F1DA0220053B9F4 /* nokogiri.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = nokogiri.c; sourceTree = "<group>"; };
 		0358991E1F1DA5570053B9F4 /* voice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = voice.c; sourceTree = "<group>"; };
 		0358991F1F1DA79B0053B9F4 /* kukei.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = kukei.c; sourceTree = "<group>"; };
+		035899201F2075C20053B9F4 /* sin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sin.c; sourceTree = "<group>"; };
+		035899211F20784A0053B9F4 /* triangle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = triangle.c; sourceTree = "<group>"; };
+		035899221F20795A0053B9F4 /* renzokutest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = renzokutest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		035899111F1D94C10053B9F4 = {
 			isa = PBXGroup;
 			children = (
+				035899221F20795A0053B9F4 /* renzokutest.c */,
+				035899211F20784A0053B9F4 /* triangle.c */,
 				0358991F1F1DA79B0053B9F4 /* kukei.c */,
 				0358991E1F1DA5570053B9F4 /* voice.c */,
 				0358991B1F1DA0220053B9F4 /* nokogiri.c */,
+				035899201F2075C20053B9F4 /* sin.c */,
 				0358991A1F1D9CD50053B9F4 /* muon.c */,
 				035899191F1D99950053B9F4 /* testnote.c */,
 				035899181F1D95030053B9F4 /* soundtest.c */,
