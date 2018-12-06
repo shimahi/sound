@@ -22,12 +22,12 @@ void WriteWavFile(const char *filename, char *buf, int size)
     int filesize = 44 + size;
     FILE *fp;
     char *work;
-    
+
     fp = fopen(filename, "wb");
     if (fp == NULL) { return; }
     work = (char *) malloc(filesize);
     if (work == NULL) { return; }
-    
+
     memcpy(work, "RIFF", 4);
     work[4] = (filesize - 8) >> 0  & 0xff;
     work[5] = (filesize - 8) >> 8  & 0xff;
@@ -46,7 +46,7 @@ void WriteWavFile(const char *filename, char *buf, int size)
     work[40] = size >> 0  & 0xff; work[41] = size >> 8  & 0xff;
     work[42] = size >> 16 & 0xff; work[43] = size >> 24 & 0xff;
     memcpy(work + 44, buf, size);
-    
+
     fwrite(work, filesize, 1, fp);
     fclose(fp);
     free(work);
@@ -59,7 +59,7 @@ double GenRosenberg(int freq)
     double tau  = 0.90;  /* 声門開大期 */
     double tau2 = 0.95;  /* 声門閉小期 */
     double sample = 0.0;
-    
+
     t += (double)freq / (double)SMPL;
     t -= floor(t);
     if (t <= tau) {
@@ -112,19 +112,19 @@ int main(void)
         {1.20,1.30,1.10,1.00,1.00},
         {1.15,0.50,1.20,1.00,1.00}
     };
-    
+
     /* 設定 */
     size  = SMPL * 1;    /* 1秒間 */
     buf   = (char *) malloc(size);
     freq  = 220.0;     /* 基本周波数 */
     vtlen = 15.0;     /* 声道の長さ */
-    
+
     /* 共鳴周波数を計算 */
     for (i = 0; i < 5; i++) {
         formant[i] = (double)((34000.0*(double)(2*i+1))/(4.0*vtlen));
         formant[i] *= male[VOWEL_A][i];  /* 「あ」 */
     }
-    
+
     /* 波形の生成 */
     for (i = 0; i < size; i++) {
         out = 0.0;
@@ -135,7 +135,7 @@ int main(void)
         }
         buf[i] = (char)(128.0 * MIN(MAX(out, -1.0), 1.0)) + 128;
     }
-    
+
     /* 書き出し */
     WriteWavFile("voice.wav", buf, size);
     free(buf);
